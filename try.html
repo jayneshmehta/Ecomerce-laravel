@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // var form = new FormData();
+        // form.append("userId", "21");
+        // form.append("productId", "98");
+        // form.append("status", "Pending");
+        // form.append("email", "jayneshmehta12@gmail.com");
+        // form.append("password", "jaynesh");
+        for (let index = 2719; index < 2798; index++) {
+
+            var settings = {
+                "url": `https://apitutorial.dev.radixweb.net/api/user/findUserLeaveBalance/${index}`,
+                "method": "GET",
+                "timeout": 0,
+                "headers": {
+                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZGI2ZTUwN2RkNTg4MTNmNjYzOTcyMSIsInVzZXJuYW1lIjoiSmF5bmVzaE1laHRhIiwiZW1haWwiOiJqYXluZXNobWVodGExQGdtYWlsLmNvbSIsInJvbGUiOiJTdHVkZW50IiwiaWF0IjoxNjkyOTM2NzEzLCJleHAiOjE2OTI5NTQ3MTN9.9rolaUx5Qj5EJp3YYkXL7tp0FMNLxhlyT46Hy0952vg"
+                },
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                // "data": form
+            };
+
+            $.ajax(settings).done(function (response) {
+                response = JSON.parse(response);
+                console.log(response.data?.EmployeeName);
+                console.log(response.data?.Level1ApprovedByName);
+                console.log(response.data?.Level2ApprovedByName);
+                console.log('');
+            });
+
+        }
+    </script>
+</body>
+
+</html> -->
